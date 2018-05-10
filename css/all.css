@@ -1,1 +1,73 @@
-body{font-size:25px;color:#212121;font-family:"brandon-grotesque",sans-serif;margin:10% 10% 0 10%;background-color:#fafafa}@media screen and (max-device-width:360px){body{margin:10px 10px 0 10px}}@media screen and (min-device-width:1280px){body{width:1024px;margin-left:auto;margin-right:auto}}h1{font-size:1.5em;margin-top:0}.card{box-shadow:0 3px 10px 0 rgba(0,0,0,0.2);padding:20px;margin-bottom:1em;background-color:white}.card p{margin:0}.row{width:100%}.col-1-3{display:inline-block;width:31%}a:link,a:visited,a:hover,a:active{text-decoration:none;color:#212121}input{box-sizing:border-box;font-size:.8em;border:0;border-radius:5px;background:#fafafa;margin:10px 0 10px 0;padding:10px;box-shadow:0 3px 10px 0 rgba(0,0,0,0.2);width:100%}input[type=submit]{cursor:pointer;background:#ffffff}.imprint-container{cursor:pointer;margin:200px 0 50px 0}.trigger{font-size:10px;text-align:center}.imprint{font-size:16px;text-align:center}.hidden{display:none}.alert{margin-bottom:1em;color:green}.piwik{font-size:10px;margin:auto}/*# sourceMappingURL=all.css.map */
+body {
+    font-size: 25px;
+    color: #212121;
+    font-family: "brandon-grotesque", sans-serif;
+    margin: 10% 10% 0 10%;
+    background-color: #fafafa
+}
+
+@media screen and (max-device-width: 360px) {
+    body {
+        margin: 10px 10px 0 10px
+    }
+}
+
+@media screen and (min-device-width: 1280px) {
+    body {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 0
+}
+
+.card {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 1em;
+    background-color: white
+}
+
+.card p {
+    margin: 0
+}
+
+.row {
+    width: 100%
+}
+
+.col-1-3 {
+    display: inline-block;
+    width: 31%
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #212121
+}
+
+input {
+    box-sizing: border-box;
+    font-size: .8em;
+    border: 0;
+    border-radius: 5px;
+    background: #fafafa;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    width: 100%
+}
+
+input[type=submit] {
+    cursor: pointer;
+    background: #ffffff
+}
+
+.alert {
+    margin-bottom: 1em;
+    color: green
+}

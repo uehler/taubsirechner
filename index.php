@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'ep' => $maxEvolve * 500 * 2,
             'maxEvolve' => $maxEvolve,
             'count' => $count,
-            'candy' => $candy
+            'candy' => $candy,
         );
 
         $totalEp += $ep[$pokemon]['ep'];
@@ -88,37 +88,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="submit" class="col-1-3" value="berechne">
             </div>
         </form>
-        <div class="imprint-container">
-            <div class="trigger"><u>Impressum und Datenschutz</u></div>
-            <div class="imprint hidden">
-                Uli Ehler <br>
-                Kleines Bergl 2 <br>
-                91257 Pegnitz <br>
-                m@uli.io <br>
-                <br>
-                <br>
-                <a href="https://uli.io" style="color:blue; display: block;">uli.io</a>
-                <br>
-                <br>
-            </div>
-        </div>
-
-
-        <script>window.onload = init;
-
-            function init() {
-                document.querySelector('.trigger').onclick = triggerImprint;
-            }
-
-            function triggerImprint() {
-                let imprint = document.querySelector('.imprint');
-                console.log(imprint);
-
-                if (imprint.classList.contains('hidden')) {
-                    imprint.classList.remove('hidden');
-                } else {
-                    imprint.classList.add('hidden');
-                }
-            }</script>
     </body>
 </html>
