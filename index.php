@@ -1,31 +1,29 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+CONST VERSION = '1.0.1';
 
-$version = '1.0.1';
+CONST EVOLUTION_EP = 500;
+CONST LUCKY_EGG_MULTIPLICATOR = 2;
+CONST CANDY = 12;
 
+$totalEp = 0;
+$ep = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $ep = [];
-    $totalEp = 0;
     foreach ($_POST as $pokemon => $values) {
         $candy = (int)$values['candy'];
         $count = (int)$values['count'];
 
-        $maxEvolve = floor($candy / 12);
+        $maxEvolve = floor($candy / CANDY);
         $maxEvolve = $count < $maxEvolve ? $count : $maxEvolve;
 
-        $ep[$pokemon] = array(
-            'ep' => $maxEvolve * 500 * 2,
+        $ep[$pokemon] = [
+            'ep' => $maxEvolve * EVOLUTION_EP * LUCKY_EGG_MULTIPLICATOR,
             'maxEvolve' => $maxEvolve,
             'count' => $count,
             'candy' => $candy,
-        );
+        ];
 
         $totalEp += $ep[$pokemon]['ep'];
     }
-} else {
-    $totalEp = 0;
-    $ep = array();
 }
 ?>
 
