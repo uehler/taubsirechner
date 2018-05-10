@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             function triggerImprint() {
-                var imprint = document.querySelector('.imprint');
+                let imprint = document.querySelector('.imprint');
                 console.log(imprint);
 
                 if (imprint.classList.contains('hidden')) {
