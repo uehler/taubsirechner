@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <?php if (!empty($ep)) { ?>
             <div class="alert card">
-                Wenn du deine Pokemon entwickelst und dabei ein Glücksei verwendest, dann erhälts du <?= $totalEp; ?> EP. <br>
+                Wenn du deine Pokemon entwickelst und dabei ein Glücksei verwendest, dann erhältst du <?= $totalEp; ?> EP. <br>
                 <br>
                 Entwickelbare Pokemon:
                 <ul>
