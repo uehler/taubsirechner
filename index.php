@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 $version = '1.0.1';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ep = [];
     $totalEp = 0;
     foreach ($_POST as $pokemon => $values) {
