@@ -41,28 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <title>Taubsirechner</title>
         <link href="css/all.css?v=<?php echo str_replace('.', '', $version); ?>" rel="stylesheet">
-
-        <!-- Piwik -->
-        <script type="text/javascript">
-            var _paq = _paq || [];
-            _paq.push(["setDomains", ["*.taubsirechner.de"]]);
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function () {
-                var u = "//piwik.ehlertainment.de/";
-                _paq.push(['setTrackerUrl', u + 'piwik.php']);
-                _paq.push(['setSiteId', '2']);
-                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-                g.type = 'text/javascript';
-                g.async = true;
-                g.defer = true;
-                g.src = u + 'piwik.js';
-                s.parentNode.insertBefore(g, s);
-            })();
-        </script>
-        <noscript><p><img src="//piwik.ehlertainment.de/piwik.php?idsite=2" style="border:0;" alt=""/></p></noscript>
-        <!-- End Piwik Code -->
-
     </head>
     <body>
 
@@ -122,25 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a href="https://uli.io" style="color:blue; display: block;">uli.io</a>
                 <br>
                 <br>
-                <blockquote>
-                    <p>
-                        <strong>Analysedienste</strong>
-                    </p>
-                    <p>
-                        Unsere Website verwendet Piwik, dabei handelt es sich um einen sogenannten Webanalysedienst. Piwik verwendet sog. “Cookies”, das sind Textdateien, die auf Ihrem Computer gespeichert werden und die unsererseits eine Analyse der Benutzung der Webseite ermöglichen. Zu diesem Zweck werden die durch den Cookie erzeugten Nutzungsinformationen (einschließlich Ihrer gekürzten IP-Adresse) an unseren Server übertragen und zu Nutzungsanalysezwecken gespeichert, was der Webseitenoptimierung unsererseits dient. Ihre IP-Adresse wird bei diesem Vorgang umge&shy;hend anony&shy;mi&shy;siert, so dass Sie als Nutzer für uns anonym bleiben. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden nicht an Dritte weitergegeben. Sie können die Verwendung der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern, es kann jedoch sein, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können.
-                    </p>
-                    <p>
-                        Wenn Sie mit der Spei&shy;che&shy;rung und Aus&shy;wer&shy;tung die&shy;ser Daten aus Ihrem Besuch nicht ein&shy;ver&shy;stan&shy;den sind, dann kön&shy;nen Sie der Spei&shy;che&shy;rung und Nut&shy;zung nachfolgend per Maus&shy;klick jederzeit wider&shy;spre&shy;chen. In diesem Fall wird in Ihrem Browser ein sog. Opt-Out-Cookie abgelegt, was zur Folge hat, dass Piwik kei&shy;ner&shy;lei Sit&shy;zungs&shy;da&shy;ten erhebt. <strong>Achtung</strong>: Wenn Sie Ihre Cookies löschen, so hat dies zur Folge, dass auch das Opt-Out-Cookie gelöscht wird und ggf. von Ihnen erneut aktiviert werden muss.
-                    </p>
-                    <p>
-                        <strong>Widerspruch</strong>:
-                    </p>
-                    <iframe style="border: 0; height: 200px; width: 600px;" src="http://piwik.ehlertainment.de/index.php?module=CoreAdminHome&action=optOut&language=de"></iframe>
-
-                    <p>
-                        Quelle Datenschutzerklärung: <a href="www.datenschutzbeauftragter-info.de">www.datenschutzbeauftragter-info.de</a>
-                    </p>
-                </blockquote>
             </div>
         </div>
 
